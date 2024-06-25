@@ -1,41 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
-section {
-	width: 75vw;
-	margin: 1rem auto;
-	background-color: #eee;
-	padding: 1rem;
-	border: 1px solid rgba(0,0,0,.1);
-}
+:root {
+    --primary-color: #144389;
+    --secondary-color: #1B3172;
+    --accent1-color: 206, 213, 227; /*#CED5E3;*/
+    --accent2-color: 28, 63, 128; /*#1C3F80; */
 
-p {
-	text-align: justify;
-}
+    --heading-font: "Oswald", arial;
+    --paragraph-font: "Open Sans", sans-serif;
 
-.hero {
-	width: 400px;
-	margin: 10px;
-	border: 1px solid rgba(0,0,0,.1);
-	padding: 15px;
-	background-color: #247;
-	color: #fff;
+    --nav-background-color: #CED5E3;
+    --nav-link-color: #1C3F80;
+    --nav-hover-link-color: #fff;
+    --nav-hover-background-color: #1C3F80;
 }
 
 .hero img {
-	float: right;
-	margin: 0 0 15px 15px;
-	border: 1px solid rgba(0,0,0,.3);
-	box-shadow: 0 0 30px #777;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
-blockquote {
-	margin: 0;
+.hero h1 {
+    color: white;
+    position: absolute;
+    /*background-color: rgba(var(--accent1-color), 0.6);*/
+    text-align: center;
+    top: 20px;
+    left: 0;
+    right: 0;
+    /*padding: 16px;*/
+    margin: 0;
+    box-sizing: border-box;
 }
 
-cite {
-	display: block;
-	border-top: 1px dotted #fff;
-	padding-top: 3px;
-	text-align: right;
-	font-size: smaller;
+.hero article {
+    position: absolute;
+    background-color: rgba(var(--accent2-color), 0.8);
+    width: 80%;
+    padding: 12px;
+    left: 50%;
+    margin-top: -40%;
+    margin-left: -40%;
+    color: white;
+}
+
+.hero article h2 {
+    color: white;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
 }
