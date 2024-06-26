@@ -1,56 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
-:root {
-    --primary-color: #144389;
-    --secondary-color: #1B3172;
-    --accent1-color: 206, 213, 227; /*#CED5E3;*/
-    --accent2-color: 28, 63, 128; /*#1C3F80; */
-
-    --heading-font: "Oswald", arial;
-    --paragraph-font: "Open Sans", sans-serif;
-
-    --nav-background-color: #CED5E3;
-    --nav-link-color: #1C3F80;
-    --nav-hover-link-color: #fff;
-    --nav-hover-background-color: #1C3F80;
+body {
+    font-size: 1.0rem;
+    font-family: system-ui;
 }
 
-.hero img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
+.hero-image {
+    background-color: #8ea9df;
+    background-image: url("../images/white_water_rafting_river.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero h1 {
-    color: white;
-    position: absolute;
-    /*background-color: rgba(var(--accent1-color), 0.6);*/
+    color: black;
+    position: top;
     text-align: center;
     top: 20px;
     left: 0;
     right: 0;
-    /*padding: 16px;*/
     margin: 0;
     box-sizing: border-box;
 }
 
 .hero article {
     position: absolute;
-    background-color: rgba(var(--accent2-color), 0.8);
-    width: 80%;
-    padding: 12px;
-    left: 50%;
+    background-color: rgba(19, 196, 228, 0.5);;
+    width: 70%;
+    padding: 20px;
+    left: 80%;
     margin-top: -40%;
-    margin-left: -40%;
-    color: white;
-}
-
-.hero article h2 {
+    margin-left: -65%;
     color: white;
 }
 
 .hero article img {
     float: right;
-    width: 200px;
+    width: 400px;
 }

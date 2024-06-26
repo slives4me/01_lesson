@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
     --primary-color: #144266;
     --secondary-color: #78c4d7;
