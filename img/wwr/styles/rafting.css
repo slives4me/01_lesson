@@ -64,14 +64,14 @@ nav a {
     padding-bottom: 200px;
 }
 
-.hero  article h1 {
+ .hero h1 {
     color: black;
     position: absolute;
     text-align: center;
-    top: 20px;
+    top: 10px;
     left: 0;
     right: 0;
-    padding: 16px;
+    padding: 50px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -90,7 +90,10 @@ nav a {
 
 .hero article img {
     float: right;
-    width: 400px;
+    margin-left: 10px;
+    width: 200px;
+    height: auto;
+    padding: 3px;
 }
 
 section h2 {
@@ -101,7 +104,6 @@ section h2 {
 
 footer p {
     text-align: left;
-    align-self: left;
     justify-self: left;
     margin: 0;
 }
