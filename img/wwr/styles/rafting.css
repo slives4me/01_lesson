@@ -1,35 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
+:root {
+    --primary-color: #144389;
+    --secondary-color: #1B3172;
+    --accent1-color: 206, 213, 227; 
+    --accent2-color: 28, 63, 128;
+
+    --heading-font: "Oswald", arial;
+    --paragraph-font: "Open Sans", sans-serif;
+
+    --nav-background-color: #CED5E3;
+    --nav-link-color: #1C3F80;
+    --nav-hover-link-color: #fff;
+    --nav-hover-background-color: #1C3F80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-size: 1.0rem;
     font-family: system-ui;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.hero-image {
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 0;
+}
+
+header {
+    background-color: var(--accent1-color);
+    margin: 0 auto;
+    display: grid;
+}
+
+nav {
+    font-size: 1rem;
+    text-align: left
+}
+
+nav a {
+    color: var(--nav-link-color);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.hero image {
     background-color: #8ea9df;
     background-image: url("../images/white_water_rafting_river.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.hero h1 {
+.hero  article h1 {
     color: black;
-    position: top;
+    position: absolute;
     text-align: center;
     top: 20px;
     left: 0;
     right: 0;
+    padding: 16px;
     margin: 0;
     box-sizing: border-box;
 }
 
 .hero article {
     position: absolute;
-    background-color: rgba(19, 196, 228, 0.5);;
+    background-color: rgba(19, 196, 228, 0.5);
+    text-align: left;
     width: 70%;
     padding: 20px;
     left: 80%;
@@ -41,4 +91,17 @@ body {
 .hero article img {
     float: right;
     width: 400px;
+}
+
+section h2 {
+    text-align: left;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+footer p {
+    text-align: left;
+    align-self: left;
+    justify-self: left;
+    margin: 0;
 }
