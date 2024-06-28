@@ -22,11 +22,10 @@
 
 
 body {
-    font-size: 1.0rem;
-    font-family: system-ui;
-    max-width: 90%;
+    width: 1250px;
     margin: 0 auto;
-}
+    padding: 0 20px 20px 20px;
+ }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -63,6 +62,10 @@ nav a {
     padding-top: 200px;
     padding-bottom: 200px;
 }
+
+hero p {
+    background-color: rgba(26, 21, 22, 0.133);
+  }
 
  .hero h1 {
     color: black;
