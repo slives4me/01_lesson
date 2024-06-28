@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display");
+
+body {
+    font-size: 1.0rem;
+    font-family: "Roboto", sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+ }
 
 :root {
     --primary-color: #144389;
@@ -19,13 +27,6 @@
     margin: 0;
     padding: 0;
 }
-
-
-body {
-    width: 1250px;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
- }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -55,7 +56,7 @@ nav a {
 
 .hero image {
     background-color: #8ea9df;
-    background-image: url("../images/white_water_rafting_river.jpg");
+    background-image: url("../images/littlecolorado-wide.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -69,34 +70,33 @@ hero p {
 
  .hero h1 {
     color: black;
-    position: absolute;
+    position: top;
     text-align: center;
     top: 10px;
-    left: 0;
-    right: 0;
     padding: 50px;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 .hero article {
     position: absolute;
     background-color: rgba(19, 196, 228, 0.5);
     text-align: left;
-    width: 70%;
+    width: 50%;
     padding: 20px;
     left: 80%;
-    margin-top: -40%;
-    margin-left: -65%;
+    margin-top: -20%;
+    margin-left: -60%;
     color: white;
 }
 
 .hero article img {
     float: right;
     margin-left: 10px;
-    width: 200px;
-    height: auto;
-    padding: 3px;
+    width: 30vw;
+    height: 30vw;
+    padding: 1rem;
 }
 
 section h2 {
