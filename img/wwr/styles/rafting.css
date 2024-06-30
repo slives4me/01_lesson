@@ -1,26 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display");
-
-body {
-    font-size: 1.0rem;
-    font-family: "Roboto", sans-serif;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
- }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-color: #144389;
-    --secondary-color: #1B3172;
-    --accent1-color: 206, 213, 227; 
-    --accent2-color: 28, 63, 128;
+    --primary-color: #90e0ef;
+    --secondary-color: #caf0f8;
+    --accent1-color: #0077b6;
+    --accent2-color: #00b4d8;
 
-    --heading-font: "Oswald", arial;
-    --paragraph-font: "Open Sans", sans-serif;
+    --heading-font: 'roboto', arial;
+    --paragraph-font: 'roboto', arial, sans-serif;
+    --nav-background-color: #caf0f8;
+    --nav-link-color: #90e0ef;
+    --nav-hover-link-color: #0077b6;
+    --nav-hover-background-color: #00b4d8;
+}
 
-    --nav-background-color: #CED5E3;
-    --nav-link-color: #1C3F80;
-    --nav-hover-link-color: #fff;
-    --nav-hover-background-color: #1C3F80;
+body {
+    font-family: 'Roboto', arial sans serif;
+    width: 960px;
+    margin: 0 auto;
 }
 
 * {
@@ -38,75 +35,108 @@ p {
 }
 
 header {
-    background-color: var(--accent1-color);
-    margin: 0 auto;
-    display: grid;
+    /* background-color: var(--accent1-color); */
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 200px auto;
+	align-items: center;
+	border-bottom: 1px solid #cccccc0a;
+    max-width: 1000px;
+ }
+
+ .logo img {
+    margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+ }
+nav {
+    background-color: #00b4d8;
+    font-size: 1.5rem;
+    text-align: right
 }
 
-nav {
-    font-size: 1rem;
-    text-align: left
+.nav a {
+	flex: 1 1 100%;
 }
 
 nav a {
+    display: block;
     color: var(--nav-link-color);
-    padding: 1rem;
+    padding: .75rem;
     text-decoration: none;
 }
 
-.hero image {
-    background-color: #8ea9df;
-    background-image: url("../images/littlecolorado-wide.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    padding-top: 200px;
-    padding-bottom: 200px;
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
-
-hero p {
-    background-color: rgba(26, 21, 22, 0.133);
-  }
 
  .hero h1 {
     color: black;
-    position: top;
+    /* position: absolute; */
     text-align: center;
-    top: 10px;
-    padding: 50px;
-    margin: 0;
-    box-sizing: border-box;
+    margin-bottom: 10px;
+    right: 0;
+    padding: 20px;
 }
-
 
 .hero article {
     position: absolute;
     background-color: rgba(19, 196, 228, 0.5);
-    text-align: left;
-    width: 50%;
+    width: 35%;
     padding: 20px;
-    left: 80%;
-    margin-top: -20%;
-    margin-left: -60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     color: white;
+    top: 19rem;
 }
 
 .hero article img {
     float: right;
-    margin-left: 10px;
-    width: 30vw;
-    height: 30vw;
-    padding: 1rem;
+    width: 200px;
 }
 
 section h2 {
-    text-align: left;
-    padding: 1rem;
+    text-align: center;
+    padding: 1.5rem;
     max-width: 100%;
+    font-size: 34px;
 }
 
-footer p {
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
     text-align: left;
-    justify-self: left;
-    margin: 0;
+ }
+  
+ img {
+    max-width: 220px;
+    max-height: 150px;
+ }
+  
+ figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+ }
+
+footer p {
+    text-align: center;
+    justify-self: center;
+    margin: 10px;
+    padding: 20px
 }
+
+nav footer {
+    display: block;
+    color: var(--nav-link-color);
+    padding: .25rem;
+    text-decoration: none;
+ }
